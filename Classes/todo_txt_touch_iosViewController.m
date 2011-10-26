@@ -406,7 +406,7 @@ shouldReloadTableForSearchString:(NSString *)searchString
 
 - (UITableViewCellAccessoryType)tableView:(UITableView *)tableView accessoryTypeForRowWithIndexPath:(NSIndexPath *)indexPath {
     
-    return UITableViewCellAccessoryDetailDisclosureButton;
+    return UITableViewCellAccessoryDisclosureIndicator;
 }
 
 @end

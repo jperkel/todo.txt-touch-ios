@@ -105,16 +105,17 @@
 	return [[todo_txt_touch_iosAppDelegate sharedDelegate] logout];
 }
 
+// UNCOMMENT OUT THIS FUNCTION TO USE DROPBOX TODO.TXT
 - (void) presentLoginController {
-    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        navigationController.viewControllers = [NSArray arrayWithObject:[[[iPadLoginScreenViewController alloc] init] autorelease]];
-        navigationController.navigationBar.hidden = YES;
-    }
-    else
-    {
-        navigationController.viewControllers = [NSArray arrayWithObject:[[[LoginScreenViewController alloc] init] autorelease]];
-        navigationController.navigationBar.hidden = YES;
-    }
+//    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+//        navigationController.viewControllers = [NSArray arrayWithObject:[[[iPadLoginScreenViewController alloc] init] autorelease]];
+//        navigationController.navigationBar.hidden = YES;
+//    }
+//    else
+//    {
+//        navigationController.viewControllers = [NSArray arrayWithObject:[[[LoginScreenViewController alloc] init] autorelease]];
+//        navigationController.navigationBar.hidden = YES;
+//    }
 }
 
 - (void) presentMainViewController {
